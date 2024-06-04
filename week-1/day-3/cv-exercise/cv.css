@@ -49,7 +49,7 @@ main {
     font-size: 20px;
     #contact {
         form {
-            padding-right: 32px;
+            margin-bottom: 32px;
             * {
                 font-size: 18px;
                 width: 100%;
@@ -114,11 +114,17 @@ main {
 }
 
 @media (min-width: 900px){
+    #mobile-menu-button, #mobile-menu-container{
+        display: none;
+    }
     main {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 16px;
+        form {
+            padding-right: 32px;
+        }
         #contact, #profile {
             padding-top: 16px;
         }
@@ -133,6 +139,59 @@ main {
 }
 
 @media (max-width: 900px) {
+    #mobile-menu-button {
+        z-index: 999;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        background-color: white;
+        border: none;
+        border-bottom-left-radius: 8px;
+        box-shadow: -2px 2px 3px rgba(255, 165, 0, 0.2);
+        color: orange;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 36px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    #mobile-menu-container {
+        z-index: 999;
+        margin: 0;
+        padding: 16px;
+        padding-left: 24px;
+        padding-bottom: 24px;
+        display: none;
+        flex-direction: column;
+        box-shadow: -2px 2px 3px rgba(255, 165, 0, 0.2);
+        border-bottom-left-radius: 8px;
+        font-size: 20px;
+        line-height: 48px;
+        width: 50%;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+
+        background-color: white;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: orange;
+            }
+        }
+        #close-menu-icon-div {
+            width: 100%;
+            display: flex;
+            text-align: right;
+            justify-content: flex-end;
+            padding: 8px;
+            color: orange;
+        }
+    }
     body {
         header {
             flex-direction: column;

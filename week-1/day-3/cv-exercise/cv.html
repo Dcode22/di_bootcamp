@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="cv.css">
     <title>David Levine - Resume</title>
 </head>
 <body>
+    <button id="mobile-menu-button" onclick="openMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <menu id="mobile-menu-container">
+        <div id="close-menu-icon-div"><i class="fas fa-times" onclick="closeMenu()"></i></div>
+        <li onclick="closeMenu()"><a href="#profile">PROFILE</a></li>
+        <li onclick="closeMenu()"><a href="#experience">EXPERIENCE</a></li>
+        <li onclick="closeMenu()"><a href="#education">EDUCATION</a></li>
+        <li onclick="closeMenu()"><a href="#contact">CONTACT</a></li>
+    </menu>
     <header>
         <div>
             <h1>DAVID<br><b>LEVINE</b></h1>
