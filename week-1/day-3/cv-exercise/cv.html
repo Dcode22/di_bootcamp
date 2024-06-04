@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cv.css">
+    <title>David Levine - Resume</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>DAVID<br><b>LEVINE</b></h1>
+            <hr>
+            <h2>WEB DEVELOPER</h>
+        </div>
+        <img src="./assets/head-shot.jpeg" alt="David Levine profile photo">
+    </header>
+    <main>
+        <section id="contact">
+            <h3>CONTACT ME</h3>
+            <hr>
+            <form onsubmit="sendEmail(event)">
+                <input id="subject-input" type="text" placeholder="Subject" required>
+                <br>
+                <textarea id="message-input" name="message" placeholder="Message" required></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+            <ul>
+                <li id="email-li"><a href="mailto:dylevine18@gmail.com">dylevine18@gmail.com</a></li>
+                <li id="phone-li"><a href="tel:+972535456326">+972 53 545 6326</a></li>
+                <li id="linkedIn-li"><a href="https://www.linkedin.com/in/dlevineil/">linkedin.com/in/dlevineil</a></li>
+            </ul>
+        </section>
+        
+        <section id="profile">
+            <h3>PROFILE</h3>
+            <hr>
+            <p>
+                Full stack developer with 3 years experience in Angular frontend and NodeJS/GraphQL backend. I enjoy taking ownership of the features I'm working on and proactively contemplating potential bugs and edge-cases and solving for them preemptively. I especially enjoy working in small, versatile teams where I can have the opportunity to approach features holistically and use the hands-on vantage point of a developer to help inform the design and product development process as well.
+            </p>
+        </section>
+        <section id="education">
+            <h3>EDUCATION</h3>
+            <hr>
+            <b>GRADUATE</b><br>
+            <span>Developers.Institute | Tel Aviv</span><br>
+            <span>August - November, 2020</span>
+            <br>
+            <br>
+            <b>BA IN CULTURAL STUDIES</b><br>
+            <span>SUNY Empire State College | New York</span><br>
+            <span>2018 - 2020</span>
+        </section>
+        <section id="experience">
+            <h3>EXPERIENCE</h3>
+            <hr>
+            <b>SOFTWARE ENGINEER</b><br>
+            <span>Razroo Inc. | Jerusalem | June 2021 - May 2024</span>
+            <p>As a frontend engineer, I was responsible for building and testing full features using Angular, NgRx, GraphQL and Jest. Working in a small team I was also responsible with coordinating with backend engineers and sometimes writing backend code as well in Node.js using DynamoDB and S3.</p>
+            <br>
+            <b>WEB DEVELOPMENT INTERN</b><br>
+            <span> Twik | Tel Aviv | February - March 2021</span>
+            <p>Worked on small frontend features using HTML, CSS and vanilla JS</p>
+        </section>
+    </main>
+    <script src="cv.js"></script>
+</body>
+</html>
