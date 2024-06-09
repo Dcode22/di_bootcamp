@@ -6,7 +6,7 @@ print(5 < 3) # false
 print(3 ==3) # true
 print(3 == "3") # false
 print("Hello" == "hello") #false
-print("3" > 3) # error
+# print("3" > 3) # error
 
 computer_brand = 'Apple'
 
@@ -25,7 +25,7 @@ if a > b:
 
 def oddOrEven():
     num = input("Input a number: ")
-    if num % 2 == 0:
+    if int(num) % 2 == 0:
         print("even")
     else: print("odd")
 
@@ -36,9 +36,9 @@ myName = "Good Old Mother Effing Dave"
 usersName = input("Enter your name: ")
 if usersName == myName: 
     print("There's clearly been a glitch in the matrix")
-else: print("Oh so your not also Good Old Mother Effing Dave? Yeah I didn't think so.")
+else: print("Oh so you're not also Good Old Mother Effing Dave? Yeah I didn't think so.")
 
 height = input("Enter your height in cm: ")
-if height >= 145: 
+if int(height) >= 145: 
     print("Hurry up there's a line")
 else: print("I'm sorry you need to grow a few inches to ride")
