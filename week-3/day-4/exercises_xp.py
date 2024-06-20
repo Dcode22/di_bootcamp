@@ -1,7 +1,7 @@
 #exercise 1
 import random
 def get_words_from_file():
-    with open("word_list.txt", mode='r') as file:
+    with open("../word_list.txt", mode='r') as file:
         return file.readlines()
     
 def get_random_sentence(length: int):
