@@ -1,0 +1,8 @@
+- A class is a definition of an object with a list of properties and methods.
+- An instance is a an actual object created from the outline provided by the class.
+- Encapsulation is the concept of properties and methods being available only inside of the class/instance they are declared in.
+- Abstraction is the concept of simplifying processes by creating functionality that can execute a more complex process just by triggering it through a function call a simpler Abstraction
+- Inheritance is where a class is defined as containing all the properties of another class, so that those properties don't need to be individually defined again. 
+- Multiple Inheritance is where a class inherits properties from more than one other class, so it contains all properties from both.
+- Polymorphism is the concept of modifying the same methods inherited from a class in several different more specific child classes.
+- MRO is the rules of overiding methods when inheriting from parent classes. If the method is defined again in the child class then the new functionality replaces the inherited method.
