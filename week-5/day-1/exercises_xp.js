@@ -33,10 +33,10 @@ for(let i = 0; i < colors.length; i++){
 
 // Exercise 3 
 let userNumber;
-// do {
-//     userNumber = parseInt(prompt('Enter a number:'));
-//     console.log(typeof(userNumber));
-// } while (userNumber < 10);
+do {
+    userNumber = parseInt(prompt('Enter a number:'));
+    console.log(typeof(userNumber));
+} while (userNumber < 10);
 
 // Exercise 4
 const building = {
@@ -76,3 +76,26 @@ for(key in family){
     console.log(family[key])
 }
 
+//Exercise 6 
+const details = {
+    my: 'name',
+    is: 'Rudolf',
+    the: 'reindeer'
+}
+
+
+statement = ""
+Object.entries(details).forEach(([key, value]) => {
+    statement += key + ' ';
+    statement += value + ' ';
+})
+console.log(statement)
+
+// Exercise 7 
+const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+names.sort()
+let secretName = '';
+names.forEach(name => {
+    secretName += name[0].toUpperCase();
+})
+console.log(secretName)
