@@ -1,0 +1,30 @@
+<div id="navBar">
+    <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>
+<script>
+    document.getElementById('navBar').setAttribute('id', 'socialNetworkNavigation');
+    const newLi = document.createElement('li');
+    const aTag = document.createElement('a');
+    aTag.setAttribute('href', '#');
+    const textNode = document.createTextNode('Logout');
+    aTag.append(textNode);
+    newLi.append(aTag);
+    const ul = document.getElementsByTagName('ul').item(0);
+    ul.appendChild(newLi);
+    const firstLinkText = ul.firstElementChild.firstElementChild.getAttribute('href');
+    const lastLinkText = ul.lastElementChild.firstElementChild.getAttribute('href');
+    const newLinkText1 = document.createElement('span')
+    newLinkText1.innerText = firstLinkText;
+    const newLinkText2 = document.createElement('span');
+    newLinkText2.innerText = lastLinkText;
+    document.body.appendChild(newLinkText1)
+    document.body.appendChild(newLinkText2)
+   
+
+</script>

@@ -1,0 +1,30 @@
+<div id="container">Users:</div>
+<ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+<ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+</ul>
+<script>
+    const div1 = document.getElementById('container');
+    console.log(div1)
+    const allLis = document.querySelectorAll('li')
+    allLis.item(1).innerText = 'Richard';
+    let ul2li2 = document.querySelector('ul:nth-of-type(2) li:nth-of-type(2)');
+    ul2li2.remove();
+    let firstLis = document.querySelectorAll('ul li:first-child');
+    firstLis.forEach(li => li.innerText = 'Dave');
+    const uls = document.querySelectorAll('ul')
+    uls.forEach(ul => ul.classList.add('student_list'))
+    uls.item(0).classList.add('university', 'attendance')
+    div1.style.backgroundColor = 'lightblue';
+    div1.style.padding = '20px'
+    ul2li2 = document.querySelector('ul:nth-of-type(2) li:nth-of-type(2)');
+    ul2li2.style.display = 'none';
+    const ul1li2 = document.querySelector('ul:nth-of-type(1) li:nth-of-type(2)');
+    ul1li2.style.border = '1px solid black';
+    document.body.style.fontSize = '20px'
+</script>
