@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <form>
+        <input type="text" id="taskInput"><button onclick="addTask(event)">ADD</button>
+    </form>
+    <div id="listTasks">
+        <div class="to-do-item" style="display: none; gap: 10px; align-items: center; background-color: red; font-size: 18px; width: 400px;">
+            <button><i class="fa-solid fa-x"></i></button><input type="checkbox"><span class="to-do-text"></span>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

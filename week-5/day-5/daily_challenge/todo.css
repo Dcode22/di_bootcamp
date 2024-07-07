@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    input {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+        color: red;
+    }
+
+    #listTasks {
+        margin: auto;
+        width: 400px;
+        padding: 20px;
+    }
+}
