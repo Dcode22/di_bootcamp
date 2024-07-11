@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./daily_challenge.html" method="get">
+        <input type="text" name="firstName">
+        <input type="text" name="lastName">
+        <input type="submit" value="Send">
+    </form>
+    <script>
+        const searchParams = new URLSearchParams(window.location.search);
+        if(searchParams){    
+            let searchDisplay = document.createElement('span');
+            searchDisplay.innerText = searchParams.toString();
+            document.body.appendChild(searchDisplay)
+        }
+    </script>
+</body>
+</html>
