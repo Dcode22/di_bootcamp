@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: #8c03fc;
+}
+body {
+    margin: 0%;
+    padding: 0px;
+    width: 100vw;
+    height: 100%;
+}
+header {
+    nav {
+        padding-left: 32px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        input {
+            width: 300px;
+            font-size: 18px;
+        }
+    }
+    background-color: #6ADE82;
+}
+
+main {
+    background-color: #8c03fc;
+    background-image: url('circuit-pattern.png');
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 64px;
+    height: 100%;
+    .robot-card {
+        width: 300px;
+        height: 350px;
+        text-align: center;
+        padding: 20px;
+        background-color: lightblue;
+        background-image: url('card-pattern.png');
+        border-radius: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        .robot-pic {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        .robot-text {
+            text-align: left;
+        }
+    }
+}
+
