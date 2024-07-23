@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="starwars.css">
+    <title>Star Wars</title>
+    <script src="starwars.js" defer></script>
+</head>
+<body>
+    <img src="Star_Wars_Logo..png" width="500">
+    <div id="box">
+        <div id="loading" class="inner-box">
+            <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+            Loading...
+        </div>
+        <div id="unavailable" class="inner-box">
+            Oh no! That person is not available.
+        </div>
+        <div id="person" class="inner-box">
+            <h1 id="name"></h1>
+            <h3>Height: <span id="height"></span></h3>
+            <h3>Gender: <span id="gender"></span></h3>
+            <h3>Birth Year: <span id="birthyear"></span></h3>
+            <h3>Home World: <span id="homeworld"></span></h3>
+        </div>
+    </div>
+    <button id="button" onclick="getPerson()">Find Someone</button>
+</body>
+</html>
